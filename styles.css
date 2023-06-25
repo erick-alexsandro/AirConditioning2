@@ -1,0 +1,208 @@
+body, html {
+    margin: 0;
+    font-family: 'Gilroy-Bold', sans-serif;
+    padding: 0;
+    background-color: #333;
+}
+
+.container {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.img-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+
+.imageBackground {    
+    opacity: 50%;
+
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.navbar {
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+    background-color: transparent;
+    transition: background-color 0.5s ease-in-out;
+    z-index: 5;
+}
+
+.navbar-left {
+    text-transform: uppercase;
+    font-size: 24px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+}
+
+.navbar-right {
+    display: flex;
+    align-items: center;
+    margin-left: 10px; /* Adjust the value as desired */
+}
+
+.navbar-right a {
+    margin-left: 5px; /* Adjust the value as desired */
+}
+
+.navbar.scrolled {
+    background-color: #333;
+}
+
+.navbar-left,
+.navbar-right {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-left > *,
+.navbar-right > * {
+    margin: 10px;
+}
+
+.icons {
+    margin-left: 40px;
+}
+
+.icons i:hover {
+    opacity: 70%;
+}
+
+
+.navbar-left {
+    text-transform: uppercase;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.navbar-left:hover {
+    cursor: pointer;
+    opacity: 70%;
+}
+
+.navbar-right i {
+    margin-right: 20px;
+}
+
+.main-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    color: #fff;
+    display: grid;
+    text-align: center;
+}
+
+.main-title {
+    font-size: 40px;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.description {
+    width: 500px;
+    margin-top: 20px;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 10);
+}
+
+.content {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.articles-grid {
+    position: relative;
+}
+
+.article1 {
+    position: relative;
+    display: grid;
+    text-align: center;
+    height: 50vh;
+}
+
+.information {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 8rem;
+    gap: 3rem;
+}
+
+.infoText {
+    text-transform: uppercase;
+    font-size: 50px;
+    color: #fff;
+}
+
+.info-subtext {
+    display: inline-flex;
+    flex-direction: row;
+    width: 720px;
+    text-align: center;
+    gap: 2rem;
+    font-size: 16px;
+    color: #fff;
+}
+
+.info-subtext img {
+    border: #fff solid 3px;
+    border-radius: 1rem;
+    width: 100%;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 180px;
+}
+
+.article1 img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 50%;
+}
+
+.article-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    color: #fff;
+    text-align: center;
+}
+
+.article1-title {
+    text-transform: uppercase;
+    font-size: 40px;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 10);
+}
+
+.article1-description {
+    font-size: 24px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 100);
+}
